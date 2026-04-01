@@ -1,35 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Homemade+Apple&display=swap');
+
+:root {
+    --logo-font: "Homeade Apple", cursive;
+    --main-font: "Dongle", sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #cad2c5;
+    background-color: #595f39;
 }
 
 header {
+    background-color: #1B1B1B;
     width: 100%;
-    height: 70px;
-    background-color: #84a98c;
-    align-content: center;
-}
-
-nav {
-    width: 100%;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-nav button {
-    border: none;
-    padding: 8px 25px;
-    transition: .2s;
-    cursor: pointer;
-    background-color: #52796f;
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
-nav button:hover {
+
+header .left,
+header .right {
+    display: flex;
+    flex-direction: row;
+}
+
+header .left,
+header .right {
+    color: #FFFFFF;
+    gap: 19px;
+}
+
+header .left h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 100;
+    width: 150px;
+    line-height: 115%;
+    text-align: center;
+    align-content: center;
+}
+
+header .left button,
+header .right button {
+    background-color: transparent;
+    border: none;
+
+    font-family: var(--main-font);
+    font-size: 25px;
+    color: #E4E4DE;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+header .left button:hover {
+    text-decoration: underline;
+}
+
+header .right button {
+    border: 1px white solid;
+    border-radius: 50px;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    font-size: 36px;
+    text-align: center;
     transition: .2s;
-    transform: scale(1.05, 1.05);
+}
+
+header .right button:hover {
+    transition: .2s;
+    background-color: white;
+    color: #1B1B1B;
 }
